@@ -97,7 +97,7 @@ if __name__ == "__main__":
     ]
 
     for image_file, ground_truth_text in zip(image_files, ground_truth):
-        image_path = os.path.join(image_file)
+        image_path = os.path.join("./images/"+image_file)
         
         if os.path.isfile(image_path) and image_file.lower().endswith((".png", ".jpg", ".jpeg")):
             extracted_text = extract_text(image_path)
